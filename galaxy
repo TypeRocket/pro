@@ -12,7 +12,7 @@ if(is_file(__DIR__ . '/wordpress/wp-content/mu-plugins/typerocket.php'))
 if(is_file(__DIR__ . '/galaxy-config.php'))
     require __DIR__ . '/galaxy-config.php';
 
-if(defined('TR_GALAXY_PATH'))
+if(!defined('TR_GALAXY_PATH'))
     define('TR_GALAXY_PATH', __DIR__);
 
 require TR_GALAXY_PATH . '/init.php';
