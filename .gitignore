@@ -1,0 +1,44 @@
+# Your Files
+
+# Vendor
+node_modules
+/vendor
+package-lock.json
+
+# Environment
+.env
+/wp-config.php
+/sql/run/*
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+
+# WordPress
+/wordpress/*.*
+/wordpress/wp-admin
+/wordpress/wp-includes
+/wordpress/wp-content/*
+!/wordpress/wp-content/mu-plugins/
+
+# Source Maps
+*.css.map
+*.js.map
+
+# OS
+*~
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# IDE
+.idea
+.settings
+.project
+.build
+.vscode
+
+# File Types
+*.log
+*.zip
+.svn
