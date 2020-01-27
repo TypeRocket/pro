@@ -12,6 +12,7 @@ package-lock.json
 .phpunit.result.cache
 npm-debug.log
 yarn-error.log
+/galaxy-config.php
 
 # WordPress
 /wordpress/*.*
