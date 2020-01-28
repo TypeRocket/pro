@@ -16,6 +16,7 @@ yarn-error.log
 
 # WordPress
 /wordpress/*.*
+/wordpress/.maintenance
 /wordpress/wp-admin
 /wordpress/wp-includes
 /wordpress/wp-content/*
