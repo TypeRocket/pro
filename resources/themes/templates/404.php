@@ -2,7 +2,7 @@
 /**
  * Example WordPress Template MVC
  */
-\TypeRocket\Http\Template::respond(function() {
+tr_template_controller(function() {
     $title = 'Error 404';
 
     return tr_view('master', compact('title'));
