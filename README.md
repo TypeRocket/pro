@@ -107,8 +107,8 @@ class Post extends WPPost
 Stop hacking the WordPress template and rewrite system. Create your application using MVC with custom routing.
 
 ```php
-tr_route()->put()->match('/profile/([^\/]+)')->do('update@Member');
-tr_route()->get()->match('/profile/([^\/]+)')->do('profile@Member');
+tr_route()->put()->on('/profile/*', 'update@Member');
+tr_route()->get()->on('/profile/*', 'profile@Member');
 ```
 
 Use authentication policies with your controllers and models, use views, flash notification messages to the admin, get classes from the service container, and more.
@@ -116,14 +116,12 @@ Use authentication policies with your controllers and models, use views, flash n
 ```php
 class MemberController extends Controller
 {
-    public function profile( $id ) {
-        return tr_view('profile.show', compact('id'));
+    public function profile(Member $member) {
+        return tr_view('profile.show', compact('member'));
     }
 
-    public function update( $id, Member $member, AuthUser $user, Request $request ) {
+    public function update(Member $member, AuthUser $user, Request $request ) {
         
-        $member = $member->findOrDie($id);
-
         if(!$member->can('update', $user)) {
             tr_abort(401);
         }
@@ -140,25 +138,33 @@ class MemberController extends Controller
 Or, quickly create a JSON API by merely returning a model or collection as your response.
 
 ```php
-tr_route()->get()->match('posts')->do(function() {
+tr_route()->get()->on('posts', function() {
     return (new Post)->with('meta')->published()->get();
 });
 ```
 
 ### Templating
 
-Dry up your templates and use views. Use views in admin and front-end.
+Dry up your templates using views and controllers. Views in admin and front-end.
 
 ```php
-// your-theme/index.php
-$button_class = tr_post_field('button_class');
-
-$classes = class_names('button',  [
-    'button-primary' => $button_class == 'primary',
-    'button-error' => $button_class == 'error',
-]); 
-
-echo tr_view('index', compact('classes'));
+/**
+ * Example WordPress Template MVC
+ * 
+ * your-theme/index.php
+ *
+ * @var WP_Post[] $posts
+ */
+tr_template_controller(function() use ($posts) {
+    $button_class = tr_post_field('button_class');
+    
+    $classes = class_names('button',  [
+        'button-primary' => $button_class == 'primary',
+        'button-error' => $button_class == 'error',
+    ]);
+    
+    return tr_view('index', compact('classes'));
+});
 ```
 
 ```php
