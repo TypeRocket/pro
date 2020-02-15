@@ -1,7 +1,7 @@
 <h1>Theme Options</h1>
 <?php
 /** @var \TypeRocket\Elements\Form $form */
-echo $form->open();
+echo $form->useRest()->open();
 
 // Hours
 $hours = $form->repeater('Company Hours')
