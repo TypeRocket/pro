@@ -29,5 +29,6 @@ add_action('admin_enqueue_scripts', function() use ($manifest) {
 // Supports
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'title-tag' );
+register_nav_menu( 'main', 'Main Menu' );
 
 // For full Whoops support add to the wp-config.php -> define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
