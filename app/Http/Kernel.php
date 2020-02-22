@@ -29,5 +29,7 @@ class Kernel extends \TypeRocket\Http\Kernel
             [ CanManageCategories::class ],
         'search' =>
             [ AuthAdmin::class ],
+        'rest' =>
+            [ AuthAdmin::class ],
     ];
 }
