@@ -32,7 +32,7 @@ $links = $form->fieldset('Links', 'Global page links.', [
     $form->search('Privacy Page')->setPostTypeOptions('page'),
 ]);
 
-// Links
+// Design
 $design = $form->fieldset('Design', 'Site design settings.', [
     $form->swatches('Site Color')->setOptions([
         'Vibrant' => ['#333', '#0073aa'],
