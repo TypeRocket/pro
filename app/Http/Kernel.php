@@ -30,6 +30,6 @@ class Kernel extends \TypeRocket\Http\Kernel
         'search' =>
             [ AuthAdmin::class ],
         'rest' =>
-            [ AuthAdmin::class ],
+            [ AuthAdmin::class, VerifyNonce::class ],
     ];
 }
