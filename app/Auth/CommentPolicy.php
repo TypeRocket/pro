@@ -7,7 +7,7 @@ use TypeRocket\Models\WPComment;
 
 class CommentPolicy extends Policy
 {
-    public function write(AuthUser $auth, WPComment $comment)
+    public function update(AuthUser $auth, WPComment $comment)
     {
         if( $auth->isCapable('edit_posts') || $comment->getUserID() == $auth->getID()) {
             return true;
