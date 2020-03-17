@@ -23,7 +23,8 @@
     "require": {
         "php": ">=7",
         "typerocket/pro-core": "^1.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-curl": "*"
     },
     "scripts": {
         "post-create-project-cmd": [
