@@ -101,6 +101,7 @@ return [
     */
     'root' => [
         'theme' => 'templates',
+        'wordpress' => 'wordpress'
     ],
 
     /*
