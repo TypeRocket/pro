@@ -111,6 +111,37 @@ return [
     */
     'report' => [
         'error' => '\TypeRocket\Utility\ExceptionReport'
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Error Handling
+    |--------------------------------------------------------------------------
+    */
+    'errors' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Whoops PHP
+        |--------------------------------------------------------------------------
+        |
+        | Use Whoops PHP when TypeRocket debugging is enabled.
+        |
+        */
+        'whoops' => true,
+
+        /*
+        |--------------------------------------------------------------------------
+        | Throw Errors
+        |--------------------------------------------------------------------------
+        |
+        | TypeRocket defines an error handler function that throws \ErrorException.
+        | You can disable this functionality but it may impact the template error
+        | system that allows you to define 500.php theme templates.
+        |
+        | @link https://www.php.net/manual/en/function.set-error-handler.php
+        |
+        */
+        'throw' => true,
     ]
 
 ];
