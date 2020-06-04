@@ -140,8 +140,11 @@ return [
         |
         | @link https://www.php.net/manual/en/function.set-error-handler.php
         |
+        | Recommended Levels: `E_ALL` or `E_ERROR | E_PARSE`
+        |
         */
         'throw' => true,
+        'level' => E_ERROR | E_PARSE
     ]
 
 ];
