@@ -144,7 +144,7 @@ return [
         |
         */
         'throw' => true,
-        'level' => E_ERROR | E_PARSE
+        'level' => E_ALL
     ]
 
 ];
