@@ -137,7 +137,7 @@ return [
     | Assets
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket assets can be found.
+    | The PATH where TypeRocket assets can be found.
     |
     */
     'assets' => TR_PATH . '/wordpress/assets',
@@ -147,7 +147,7 @@ return [
     | TypeRocket Base
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket root can be found.
+    | The PATH where TypeRocket root can be found.
     |
     */
     'base' => TR_PATH,
