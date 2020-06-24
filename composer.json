@@ -22,7 +22,7 @@
     },
     "require": {
         "php": ">=7",
-        "typerocket/pro-core": "^1.0",
+        "typerocket/pro-core": "^1.1",
         "ext-json": "*"
     },
     "scripts": {
