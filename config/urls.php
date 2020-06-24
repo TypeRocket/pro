@@ -5,7 +5,7 @@ return [
     | Assets
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket assets can be found.
+    | The URL where TypeRocket assets are found.
     |
     */
     'assets' => tr_assets_url_build(),
@@ -15,7 +15,7 @@ return [
     | Components
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket component assets can be found.
+    | The URL where TypeRocket component assets are found.
     |
     */
     'components' => tr_assets_url_build( '/components' ),
@@ -25,7 +25,7 @@ return [
     | Typerocket Assets
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket assets can be found.
+    | The URL where TypeRocket assets are found.
     |
     */
     'typerocket' => tr_assets_url_build( '/typerocket' ),
