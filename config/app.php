@@ -100,6 +100,7 @@ return [
     |
     */
     'root' => [
+        'override' => true,
         'theme' => 'templates',
         'wordpress' => 'wordpress'
     ],
