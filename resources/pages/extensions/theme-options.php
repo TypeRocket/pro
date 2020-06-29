@@ -19,8 +19,6 @@ $hours = $form->repeater('Company Hours')
 // About
 $about = $form->fieldset('Company', 'Details about your company.', [
     $form->text('Company Name'),
-    $form->search('Post'),
-    $form->search('Posts')->multiple(),
     $form->image('Company Logo'),
     $form->input('Company Email')->setTypeEmail(),
     $form->text('Company Phone'),
