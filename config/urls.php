@@ -25,7 +25,7 @@ return [
     | Typerocket Assets
     |--------------------------------------------------------------------------
     |
-    | The URL where TypeRocket assets are found.
+    | The URL where TypeRocket Core assets are found.
     |
     */
     'typerocket' => tr_assets_url_build( '/typerocket' ),

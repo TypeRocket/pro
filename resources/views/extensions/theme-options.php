@@ -59,4 +59,3 @@ $tabs->tab('Links', 'link', $links)->setDescription('Global page links');
 $tabs->render();
 
 echo $form->close();
-?>

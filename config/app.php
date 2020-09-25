@@ -87,7 +87,6 @@ return [
     */
     'templates' => [
         'views' => '\TypeRocket\Template\TemplateEngine',
-        'pages' => '\TypeRocket\Template\TemplateEngine',
     ],
 
     /*
