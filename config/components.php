@@ -9,7 +9,7 @@ return [
     | Builder
     |--------------------------------------------------------------------------
     |
-    | list of components you want included in the builder component list.
+    | list of components you want included for the builder group.
     |
     */
     'builder' => [
