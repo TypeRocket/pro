@@ -21,7 +21,7 @@
         "docs": "https://typerocket.com/docs/v1/"
     },
     "require": {
-        "php": ">=7",
+        "php": ">=7.2",
         "typerocket/pro-core": "^1.1",
         "ext-json": "*"
     },
