@@ -69,8 +69,8 @@ return [
     |
     */
     'class' => [
-        'icons' => '\TypeRocket\Elements\Icons',
-        'form' => '\TypeRocket\Elements\Form',
+        'icons' => '\App\Elements\Icons',
+        'form' => '\App\Elements\Form',
     ],
 
     /*
@@ -144,7 +144,7 @@ return [
         |
         */
         'throw' => true,
-        'level' => E_ALL
+        'level' => E_ERROR | E_PARSE
     ]
 
 ];

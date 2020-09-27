@@ -1,6 +1,6 @@
 <h1>Theme Options</h1>
 <?php
-/** @var \TypeRocket\Elements\Form $form */
+/** @var \TypeRocket\Elements\BaseForm $form */
 echo $form->useRest()->open();
 
 // Hours
