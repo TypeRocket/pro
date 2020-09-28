@@ -28,6 +28,7 @@ return [
     */
     'services' => [
         '\App\Services\AuthService',
+        '\App\Services\MailService',
     ],
 
     /*
