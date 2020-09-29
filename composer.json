@@ -1,6 +1,6 @@
 {
     "name": "typerocket/pro",
-    "description": "TypeRocket Pro for WordPress.",
+    "description": "TypeRocket for WordPress.",
     "keywords": ["framework", "typerocket", "wordpress"],
     "license": "GPL-3.0-or-later",
     "homepage": "https://typerocket.com",
@@ -18,11 +18,11 @@
         }
     ],
     "support": {
-        "docs": "https://typerocket.com/docs/v1/"
+        "docs": "https://typerocket.com/docs/v5/"
     },
     "require": {
         "php": ">=7.2",
-        "typerocket/pro-core": "^1.1",
+        "typerocket/pro-core": "5.0.*",
         "ext-json": "*"
     },
     "scripts": {
