@@ -27,7 +27,6 @@ return [
     | create your own services. TypeRocket some with the following builtin:
     |
     |    - \App\Services\AuthService
-    |    - \App\Services\MailService
     |
     */
     'services' => [
@@ -35,7 +34,7 @@ return [
          * TypeRocket Service Providers...
          */
         '\TypeRocket\Services\ErrorService',
-        // '\TypeRocket\Services\Mailer',
+        '\TypeRocket\Services\MailerService',
 
         /*
          * Application Service Providers...

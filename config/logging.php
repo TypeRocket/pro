@@ -19,7 +19,7 @@ return [
     |
     | Here you may configure the log channels for your application.
     |
-    | Available Drivers: "stack", "file", "slack", "null"
+    | Available Drivers: "stack", "file", "slack", "mail", "null"
     */
     'channels' => [
         'stack' => [
@@ -34,6 +34,13 @@ return [
 
         'file' => [
             'driver' => '\TypeRocket\Utility\Loggers\FileLogger',
+        ],
+
+        'mail' => [
+            'driver' => '\TypeRocket\Utility\Loggers\MailLogger',
+            'mailer' => 'default',
+            'to' => 'admin_email',
+            'subject' => 'TypeRocket Log',
         ],
 
         'null' => [
