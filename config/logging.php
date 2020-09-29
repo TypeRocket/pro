@@ -24,7 +24,6 @@ return [
     'channels' => [
         'stack' => [
             'file',
-            'slack',
         ],
 
         'slack' => [
