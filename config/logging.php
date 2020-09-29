@@ -29,7 +29,7 @@ return [
         'slack' => [
             'driver' => '\TypeRocket\Utility\Loggers\SlackLogger',
             'url' => immutable('TR_LOG_SLACK_WEBHOOK_URL'),
-            'emoji' => ':boom:',
+            'emoji' => ':rocket:',
         ],
 
         'file' => [
