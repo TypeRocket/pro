@@ -27,7 +27,7 @@ return [
     'mailers' => [
         'mailgun' => [
             'driver' => \TypeRocket\Mail\Driver\MailGunMailDriver::class,
-            'region' => immutable('TR_MAILGUN_REGION', 'us'),
+            'region' => immutable('TR_MAILGUN_REGION'),
             'api_key' => immutable('TR_MAILGUN_API_KEY'),
             'domain' => immutable('TR_MAILGUN_DOMAIN'),
             'from_override' => immutable('TR_MAILGUN_FROM_OVERRIDE', false),
