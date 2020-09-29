@@ -10,7 +10,7 @@ return [
     | and used as needed; however, this mailer will be used by default.
     |
     */
-    'default' => immutable('TR_MAIL_MAILER', 'log'),
+    'default' => immutable('TR_MAIL_MAILER', 'wp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ return [
     | their respective settings. Several examples have been configured for
     | you and you are free to add your own as your application requires.
     |
-    | Options: "mailgun", "log"
+    | Options: "mailgun", "wp", "log"
     |
     */
     'mailers' => [
@@ -33,6 +33,10 @@ return [
             'from_override' => immutable('TR_MAILGUN_FROM_OVERRIDE', false),
             'from_address' => immutable('TR_MAILGUN_FROM_ADDRESS'),
             'from_name' => immutable('TR_MAILGUN_FROM_NAME'),
+        ],
+
+        'wp' => [
+            'driver' => \TypeRocket\Mail\Driver\WordPressMailDriver::class,
         ],
 
         'log' => [
