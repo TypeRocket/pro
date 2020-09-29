@@ -1,9 +1,9 @@
 <?php
 namespace App\Services;
 
-use TypeRocket\Services\Authorizer;
+use TypeRocket\Services\AuthorizerService;
 
-class AuthService extends Authorizer
+class AuthService extends AuthorizerService
 {
     protected $policies = [
         // Models

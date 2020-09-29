@@ -23,12 +23,24 @@ return [
     | Services
     |--------------------------------------------------------------------------
     |
-    | Services you want loaded into the container as singletons.
+    | Services you want loaded into the container as singletons. You can also
+    | create your own services. TypeRocket some with the following builtin:
+    |
+    |    - \App\Services\AuthService
+    |    - \App\Services\MailService
     |
     */
     'services' => [
+        /*
+         * TypeRocket Service Providers...
+         */
+        '\TypeRocket\Services\ErrorService',
+        // '\TypeRocket\Services\Mailer',
+
+        /*
+         * Application Service Providers...
+         */
         '\App\Services\AuthService',
-        '\App\Services\MailService',
     ],
 
     /*
@@ -82,12 +94,12 @@ return [
     | The template engine used to build views for the front-end and admin.
     |
     | Options:
-    |    - \TypeRocket\Template\TemplateEngine
+    |    - \TypeRocket\Template\TachyonTemplateEngine
     |    - \TypeRocket\Template\TwigTemplateEngine
     |
     */
     'templates' => [
-        'views' => '\TypeRocket\Template\TemplateEngine',
+        'views' => '\TypeRocket\Template\TachyonTemplateEngine',
     ],
 
     /*
@@ -147,5 +159,4 @@ return [
         'throw' => true,
         'level' => E_ERROR | E_PARSE
     ]
-
 ];
