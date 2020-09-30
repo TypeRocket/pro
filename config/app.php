@@ -81,7 +81,6 @@ return [
     |
     */
     'class' => [
-        'icons' => '\App\Elements\Icons',
         'form' => '\App\Elements\Form',
     ],
 
