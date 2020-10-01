@@ -53,9 +53,9 @@ $save = $form->submit( 'Save Changes' );
 // Layout
 $tabs = tr_tabs()->setFooter( $save )->layoutLeft();
 $tabs->tab('About', 'building', $about)->setDescription('Company information');
-$tabs->tab('API', 'dashboard', $api)->setDescription('Access keys for APIs');
-$tabs->tab('Design', 'droplet', $design)->setDescription('Site design settings');
-$tabs->tab('Links', 'link', $links)->setDescription('Global page links');
+$tabs->tab('API', 'admin-generic', $api)->setDescription('Access keys for APIs');
+$tabs->tab('Design', 'admin-appearance', $design)->setDescription('Site design settings');
+$tabs->tab('Links', 'admin-links', $links)->setDescription('Global page links');
 $tabs->render();
 
 echo $form->close();
