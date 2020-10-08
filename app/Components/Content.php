@@ -16,7 +16,7 @@ class Content extends Component
 
         echo $form->text('Headline');
         echo $form->image('Featured Image');
-        echo $form->editor('Content');
+        echo $form->textarea('Content');
     }
 
     /**
