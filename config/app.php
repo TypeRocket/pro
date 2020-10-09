@@ -9,13 +9,8 @@ return [
     |
     */
     'extensions' => [
-        '\TypeRocket\Extensions\Seo' => [ null ],
-        '\TypeRocket\Extensions\PageBuilder' => null,
-        '\TypeRocket\Extensions\PostTypesUI' => null,
-        '\TypeRocket\Extensions\ThemeOptions' => null,
-        '\TypeRocket\Extensions\DevTools' => [ true ],
-        '\TypeRocket\Extensions\PostMessages' => null,
-        '\TypeRocket\Extensions\Gutenberg' => [ true ],
+        '\TypeRocket\Extensions\TypeRocketUI',
+        '\TypeRocket\Extensions\PostMessages',
     ],
 
     /*
@@ -97,7 +92,7 @@ return [
     |
     */
     'templates' => [
-        'views' => '\TypeRocket\Template\TachyonTemplateEngine',
+        'views' => '\TypeRocket\Template\TemplateEngine',
     ],
 
     /*
@@ -154,7 +149,7 @@ return [
         | Recommended Levels: `E_ALL` or `E_ERROR | E_PARSE`
         |
         */
-        'throw' => true,
+        'throw' => false,
         'level' => E_ERROR | E_PARSE
     ]
 ];

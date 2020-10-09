@@ -100,14 +100,14 @@ return [
     | The PATH were composer vendor files are located.
     |
     */
-    'core' => TR_PATH . '/vendor/typerocket/core',
+    'core' => TR_PATH . '/vendor/typerocket/pro-core',
 
     /*
     |--------------------------------------------------------------------------
-    | Core
+    | Pro Core
     |--------------------------------------------------------------------------
     |
-    | The PATH were composer vendor files are located.
+    | The PATH were pro composer vendor files are located.
     |
     */
     'pro' => TR_PATH . '/vendor/typerocket/professional',

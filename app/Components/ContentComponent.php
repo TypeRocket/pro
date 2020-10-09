@@ -3,7 +3,7 @@ namespace App\Components;
 
 use TypeRocket\Template\Component;
 
-class Content extends Component
+class ContentComponent extends Component
 {
     protected $title = 'Content Component';
 

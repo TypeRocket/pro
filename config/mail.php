@@ -26,7 +26,7 @@ return [
     */
     'mailers' => [
         'mailgun' => [
-            'driver' => \TypeRocket\Mail\Driver\MailGunMailDriver::class,
+            'driver' => '\TypeRocketPro\Mail\Driver\MailGunMailDriver',
             'region' => immutable('TR_MAILGUN_REGION'),
             'api_key' => immutable('TR_MAILGUN_API_KEY'),
             'domain' => immutable('TR_MAILGUN_DOMAIN'),
@@ -36,11 +36,11 @@ return [
         ],
 
         'wp' => [
-            'driver' => \TypeRocket\Mail\Driver\WordPressMailDriver::class,
+            'driver' => '\TypeRocket\Mail\Driver\WordPressMailDriver',
         ],
 
         'log' => [
-            'driver' => \TypeRocket\Mail\Driver\LogMailDriver::class,
+            'driver' => '\TypeRocket\Mail\Driver\LogMailDriver',
         ],
     ],
 ];

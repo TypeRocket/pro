@@ -26,25 +26,25 @@ return [
             'file',
         ],
 
-        'slack' => [
-            'driver' => '\TypeRocket\Utility\Loggers\SlackLogger',
-            'url' => immutable('TR_LOG_SLACK_WEBHOOK_URL'),
-            'emoji' => ':rocket:',
-        ],
-
         'file' => [
             'driver' => '\TypeRocket\Utility\Loggers\FileLogger',
         ],
 
+        'slack' => [
+            'driver' => '\TypeRocketPro\Utility\Loggers\SlackLogger',
+            'url' => immutable('TR_LOG_SLACK_WEBHOOK_URL'),
+            'emoji' => ':rocket:',
+        ],
+
         'mail' => [
-            'driver' => '\TypeRocket\Utility\Loggers\MailLogger',
+            'driver' => '\TypeRocketPro\Utility\Loggers\MailLogger',
             'mailer' => 'default',
             'to' => 'admin_email',
             'subject' => 'TypeRocket Log',
         ],
 
         'null' => [
-            'driver' => '\TypeRocket\Utility\Loggers\NullLogger',
+            'driver' => '\TypeRocketPro\Utility\Loggers\NullLogger',
         ],
     ],
 

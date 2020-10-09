@@ -1,7 +1,7 @@
 <?php
 return [
     'registry' => [
-        'content' => \App\Components\Content::class
+        'content' => \App\Components\ContentComponent::class
     ],
 
     /*
