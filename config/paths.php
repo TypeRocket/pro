@@ -100,7 +100,7 @@ return [
     | The PATH were composer vendor files are located.
     |
     */
-    'core' => TR_PATH . '/vendor/typerocket/pro-core',
+    'core' => TR_PATH . '/vendor/typerocket/core',
 
     /*
     |--------------------------------------------------------------------------
