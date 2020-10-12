@@ -21,12 +21,12 @@ let pub = 'wordpress/assets/templates';
 mix.setPublicPath(pub).options({ processCssUrls: false });
 
 // Front-end
-mix.js('resources/assets/js/theme.js', 'theme/js')
-    .sass('resources/assets/sass/theme.scss', 'theme/css');
+mix.js('resources/assets/js/theme.js', 'theme')
+    .sass('resources/assets/sass/theme.scss', 'theme');
 
 // Admin
-mix.js('resources/assets/js/admin.js', 'admin/js')
-    .sass('resources/assets/sass/admin.scss', 'admin/css');
+mix.js('resources/assets/js/admin.js', 'admin')
+    .sass('resources/assets/sass/admin.scss', 'admin');
 
 // Version
 if (mix.inProduction()) {

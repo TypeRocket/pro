@@ -1,5 +1,10 @@
 <?php
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Component Registry
+    |--------------------------------------------------------------------------
+    */
     'registry' => [
         'content' => \App\Components\ContentComponent::class
     ],
@@ -9,7 +14,7 @@ return [
     | Builder
     |--------------------------------------------------------------------------
     |
-    | list of components you want included for the builder group.
+    | List of components you want included for the builder group.
     |
     */
     'builder' => [

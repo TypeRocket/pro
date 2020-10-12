@@ -11,6 +11,7 @@ return [
     'extensions' => [
         '\TypeRocket\Extensions\TypeRocketUI',
         '\TypeRocket\Extensions\PostMessages',
+        '\TypeRocket\Extensions\PageBuilder',
     ],
 
     /*
@@ -86,7 +87,7 @@ return [
     |
     | The template engine used to build views for the front-end and admin.
     |
-    | Options:
+    | Pro Only:
     |    - \TypeRocket\Template\TachyonTemplateEngine
     |    - \TypeRocket\Template\TwigTemplateEngine
     |
@@ -127,7 +128,7 @@ return [
     'errors' => [
         /*
         |--------------------------------------------------------------------------
-        | Whoops PHP
+        | Pro Only - Whoops PHP
         |--------------------------------------------------------------------------
         |
         | Use Whoops PHP when TypeRocket debugging is enabled.
@@ -149,7 +150,7 @@ return [
         | Recommended Levels: `E_ALL` or `E_ERROR | E_PARSE`
         |
         */
-        'throw' => false,
+        'throw' => true,
         'level' => E_ERROR | E_PARSE
     ]
 ];

@@ -34,9 +34,6 @@ else
 $tr_autoload_map = TR_AUTOLOAD_APP;
 tr_autoload_psr4($tr_autoload_map);
 
-if(!defined('TR_PRO') && class_exists('TypeRocketPro\Core\AdvancedSystem'))
-    define('TR_PRO', true);
-
 // Define configuration path
 if( !defined('TR_CORE_CONFIG_PATH') )
     define('TR_CORE_CONFIG_PATH', __DIR__ . '/config' );

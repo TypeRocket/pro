@@ -1,30 +1,47 @@
-# TypeRocket Pro
+# TypeRocket
 
-TypeRocket Pro is a highly integrated WordPress framework designed for the modern developer. TypeRocket Pro brings into one place the advanced features of ACF, Laravel, Custom Post Type UI, and more. 
+TypeRocket is a highly integrated WordPress framework designed for the modern developer. TypeRocket brings into one place the advanced features of ACF, Laravel, Custom Post Type UI, and more. 
 
-Enjoy a fluent syntax, refined UI, and powerfully fast APIs... [TypeRocket Pro](http://typerocket.com).
+Enjoy a fluent syntax, refined UI, and powerfully fast APIs... [TypeRocket](http://typerocket.com).
 
 ## Modern Features
 
 Build applications in less time with less maintenance.
 
 - Advanced custom post types, taxonomies, and admin pages.
-- Custom meta boxes, forms, fieldsets, repeater fields and 20+ other input fields.
-- Conditional fields and contexts.
+- Custom meta boxes, forms, fieldsets, and 29+ input fields.
 - Integrate custom fields with external APIs.
 - MVC, custom routing, and middleware.
 - DI and Service Container.
 - Galaxy CLI.
-- Integrated WYSIWYG Redactor editor.
 - Composer based extension publishing.
 - Fully integrated WordPress ORM with advanced features like eager loading and object caching.
 - Database migrations.
-- WordPress plugins repository bypass API for custom automatic updates for your themes and plugins.
 - Gutenberg support.
-- Configurable extensions for theme options, SEO, Custom Post Type UI, lazy image resizing, removal of comments, and more.
-- Flexible templating for Twig or Laravel Blade integrations.
+- Extensions: TypeRocket UI, Page Builder, and more.
 - Advanced policy, capability, and role APIs.
 - The list goes on...
+
+### Advanced Pro Features
+
+- Conditional fields and contexts.
+- Automatic WordPress theme and plugin updates.
+- Integrated WYSIWYG Redactor editor.
+- Additional extensions: Theme Options, SEO Meta, Dev Tools Query Monitor, and more.
+- Flexible template engines Tachyons and Twig.
+- Hot swappable drivers for logging including: file, slack, and email.
+- Hot swappable drivers for mailing including: log, wp, and mailgun.
+- Hot swappable drivers for storage including: local storage (S3 coming soon).
+- Additional form fields: background, swatch, editor, checkboxes, location, gallery, textexpand, range, and url.
+- Advanced page builder and matrix field component system.
+- Cloning for the repeater and component based fields.
+- Conditional fields.
+- Template routeing and controller to add MVC to your theme development.
+- Additional CLI commands.
+- Whoops PHP.
+- Tables UI.
+- Http helpers like: downloadables and async.
+- And more...
 
 ### Advanced Custom Post Types
 
@@ -40,7 +57,7 @@ tr_post_type('Person')
         $form = tr_form();
         echo $form->image('Photo');
         echo $form->text('Company');
-        echo $form->editor('About Person');
+        echo $form->textarea('About Person');
     })
     ->addColumn('company');
 ```
@@ -143,9 +160,9 @@ tr_route()->get()->on('posts', function() {
 });
 ```
 
-### Templating
+### Pro Templating
 
-Dry up your templates using views and controllers. Views in admin and front-end.
+Dry up your templates using views and controllers with this Pro only feature. Views in admin and front-end.
 
 ```php
 /**
@@ -167,15 +184,6 @@ tr_template_controller(function() use ($posts) {
 });
 ```
 
-```php
-// Admin page
-tr_page('tools', 'exporter', 'Exporter')->setView(tr_view('tools.exporter'));
-```
-
-### More Features
-
-Find more features at [http://typerocket.com/pro](http://typerocket.com/pro).
-
 ## License
 
-TypeRocket Pro is open-sourced software licenced under the [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+TypeRocket is open-sourced software licenced under the [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
