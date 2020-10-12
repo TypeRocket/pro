@@ -106,9 +106,12 @@ return [
     |
     */
     'root' => [
-        'override' => true,
-        'theme' => 'templates',
-        'wordpress' => 'wordpress'
+        'wordpress' => 'wordpress',
+        'themes' => [
+            'override' => true,
+            'theme' => 'templates',
+            'stylesheet' => 'theme/theme.css',
+        ]
     ],
 
     /*

@@ -2,14 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-        href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500&display=swap"
-        rel="stylesheet"
-    />
-    <link rel="stylesheet" href="//s3-us-west-2.amazonaws.com/typerocket-public/pro/pro.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --typerocket-text: #fff;
+            --typerocket-hover: #393e4f;
+            --typerocket-background: radial-gradient(51.04% 96.89% at 28.91% 31.14%, #7790e8 0%, #5b73c9 100%);
+        }
+
+        body.dark {
+            --typerocket-text: #fff;
+            --typerocket-hover: #5b73c9;
+            --typerocket-background: radial-gradient(51.04% 108.31% at 28.91% 23.02%, #393e4f 0%, #323746 100%);
+        }
+
+        #typerocket-theme-toggle {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        #typerocket-theme-toggle:hover {
+            color: var(--typerocket-hover);
+        }
+
+        body.dark .hide-light {
+            display: none;
+        }
+
+        body.light .hide-dark {
+            display: none;
+        }
+
+        .admin-bar #typerocket-theme-toggle {
+            top: calc(10px + 46px);
+        }
+
+        @media screen and (min-width: 783px) {
+            .admin-bar #typerocket-theme-toggle {
+                top: calc(10px + 32px);
+            }
+        }
+
+        nav {
+            margin: 30px auto 0;
+            text-align: center;
+        }
+
+        nav a { color: #fff; display: inline-block }
+        nav a + a { margin-left: 20px }
+        nav a:hover, nav a:active, nav a:focus { text-decoration-color: var(--typerocket-hover); }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            color: var(--typerocket-text);
+            display: grid;
+            margin: 0;
+            padding: 0;
+            place-items: center;
+            text-align: center;
+            height: 100vh;
+            background: var(--typerocket-background);
+        }
+
+        section {
+            max-width: 90%;
+            text-align: center;
+        }
+
+        img {
+            width: 290px;
+            height: auto;
+        }
+    </style>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('light'); ?>>
@@ -23,6 +91,11 @@
 <section>
     <img id="typerocket-logo" src="//s3-us-west-2.amazonaws.com/typerocket-public/pro/white-logo.svg" alt="TypeRocket Pro">
     <p><?php echo esc_html($title); ?></p>
+    <nav>
+        <a href="https://typerocket.com/">TypeRocket</a>
+        <a href="https://typerocket.com/pro">Pro</a>
+        <a href="https://typerocket.com/docs/v5">Docs</a>
+    </nav>
 </section>
 
 <script>

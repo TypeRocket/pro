@@ -1,2 +1,2 @@
 <?php
-tr_view('master', ['title' => 'v5'])->render();
+tr_view('master', ['title' => 'Andromeda'])->render();
